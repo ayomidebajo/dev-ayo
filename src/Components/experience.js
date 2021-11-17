@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div>
       <div class="work">
-        <h4 class="font-weight-bold text-center mt-5">My work experience</h4>
+        <h4 class="font-weight-bold text-center mt-5">My work Experience</h4>
         <div class="row">
           <div class="col-lg-6 ">
             <p class="h6 font-weight-bold">Frontend developer - SaVests </p>
