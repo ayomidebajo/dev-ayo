@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import { Routes, useParams } from "react-router-dom";
 import Home from "./Components/home";
 import logo from "./logo.svg";
@@ -7,9 +8,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Router>
+        <Route path="/" component={Home} />
+      </Router>
     </div>
   );
 }
