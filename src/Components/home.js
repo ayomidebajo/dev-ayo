@@ -47,7 +47,7 @@ class Home extends Component {
   };
   render() {
     return (
-      <div className="main--container">
+      <div className="main--container" id="home">
         <div className="header-background">
           <div className="nav-wrapper secondary-color">
             <nav
@@ -58,7 +58,7 @@ class Home extends Component {
               }`}
             >
               <div className="container">
-                <a className="navbar-brand mr-auto" href="#">
+                <a className="navbar-brand mr-auto" href="#home">
                   <svg
                     width="201"
                     height="36"
@@ -127,7 +127,15 @@ class Home extends Component {
                     <li className="nav-item">
                       <a href="#experience">Experience</a>
                     </li>
-                    <li className="nav-item">Resume</li>
+                    <li className="nav-item">
+                      <a
+                        href="https://docs.google.com/document/d/19uTKkrEPVC8QuHQCIDYOZfsdRC_ethUG/edit?usp=sharing&ouid=111297763769280864443&rtpof=true&sd=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Resume
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -137,7 +145,12 @@ class Home extends Component {
             <div className="">
               <div className="row">
                 <div className="col-lg-6">
-                  <p className="mb-5 custom-heading2">Hi, I'm Ayo! 🤓</p>
+                  <p className="mb-5 custom-heading2">
+                    Hi, I'm Ayo!{" "}
+                    <span role="img" aria-labelledby="emoji">
+                      🤓
+                    </span>
+                  </p>
                   <p className="h6">
                     I’m a front-end engineer based in Nigeria. I'm passionate
                     about programming, just as much as I am about creating
@@ -159,7 +172,7 @@ class Home extends Component {
                   <img
                     src={Ayo}
                     alt=""
-                    srcset=""
+                    srcSet=""
                     className="image-circle"
                     width="100%"
                   />
@@ -217,7 +230,13 @@ class Home extends Component {
                 <a href="#contact">Contact</a>
               </div>
               <div className="secondary-color">
-                <a href="#">Resume</a>
+                <a
+                  href="https://docs.google.com/document/d/19uTKkrEPVC8QuHQCIDYOZfsdRC_ethUG/edit?usp=sharing&ouid=111297763769280864443&rtpof=true&sd=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
               </div>
             </div>
           </div>
@@ -227,7 +246,12 @@ class Home extends Component {
           <div className="row ">
             <div className="col-lg-2 col-4 d-flex justify-content-between">
               <span className="">
-                <a href="https://twitter.com/ayomide_bajo">
+                {/* eslint-disable-next-line */}
+                <a
+                  href="https://twitter.com/ayomide_bajo"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -246,6 +270,7 @@ class Home extends Component {
                 <a
                   href="https://www.linkedin.com/in/ayomide-bajo"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -261,9 +286,11 @@ class Home extends Component {
                 </a>
               </span>
               <span className="">
+                {/* eslint-disable-next-line */}
                 <a
                   href="https://www.instagram.com/ayomide_bajo"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     width="30"
@@ -280,7 +307,12 @@ class Home extends Component {
                 </a>
               </span>
               <span>
-                <a href="https://github.com/ayomidebajo" target="_blank">
+                {/* eslint-disable-next-line */}
+                <a
+                  href="https://github.com/ayomidebajo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -296,7 +328,11 @@ class Home extends Component {
               </span>
             </div>
             <div className="col-lg-10 mt-3 mt-lg-0 secondary-color">
-              Made with 💜 by Ayomide Bajo
+              Made with{" "}
+              <span role="img" aria-labelledby="emoji">
+                💜
+              </span>{" "}
+              by Ayomide Bajo
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Carousel from "react-elastic-carousel";
 import { Item } from "./item";
 import simpleDashboard from "../assets/simple-dashboard.png";
@@ -14,12 +14,7 @@ const breakPoints = [
 ];
 
 function Projects() {
-  const [items, setItems] = useState([
-    simpleDashboard,
-    ecommerce,
-    booksClub,
-    blogPress,
-  ]);
+  const items = [simpleDashboard, ecommerce, booksClub, blogPress];
 
   return (
     <div>
@@ -30,9 +25,7 @@ function Projects() {
         className="container"
       >
         {items.map((item) => (
-          <Item item={item} key={item}>
-            {/* {item} */}
-          </Item>
+          <Item item={item} key={item} />
         ))}
       </Carousel>
     </div>
